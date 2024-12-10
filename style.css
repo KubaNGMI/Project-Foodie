@@ -17,6 +17,7 @@
 }
 .food ul{
     display: flex;
+    justify-content: center;
     column-gap: 60px;
     font-weight: 500;
     font-family: "Inter", sans-serif;
@@ -26,6 +27,7 @@
     color: #000000;
     text-decoration: none;
 }
+
 .logo{
     display: flex;
     column-gap: 40px;
@@ -597,8 +599,11 @@ margin-bottom: 0px;
     margin-top: 48px;
     margin-bottom: 48px;
 }
-.logo {
+.logo_bot {
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
     }
