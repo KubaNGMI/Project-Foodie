@@ -31,11 +31,14 @@
 }
 .header__end::before{
     content: '';
-    width: 1577px;
+    width: 1920px;
     height: 1px;
     background: #0000001A;
     display: block;
     margin: 0 auto;
+}
+.header__end {
+    overflow: hidden;
 }
 .top__left h1{
     font-weight: 600;
@@ -178,6 +181,11 @@ color: #000000;
     text-align: end;
     cursor: pointer;
     margin-top: 128px;
+}
+.top__right button:hover {
+    transform: scale(1.1);
+    animation: ease-in-out;
+    transition: 0.4s;
 }
 .top__right img {
     margin-bottom: 16px;
@@ -427,6 +435,7 @@ width: 792px;
     text-align: start;
     padding-left: 20px;
     border: none;
+
 }
 .sub_box button {
     width: 160px;
@@ -435,15 +444,21 @@ width: 792px;
     color: #ffffff;
     border-radius: 15px;
     position: absolute;
-    top: 124px;
     right: 32%;
+    margin-top: 10px;
     cursor: pointer;
-    margin-top: 126px;
 }
-
 .menu__list{
     display: flex;
     column-gap: 40px;
+}
+.menu__list div {
+    cursor: pointer;
+}
+.menu__list div:hover {
+    transform: scale(1.1);
+    animation: ease-in-out;
+    transition: 0.4s;
 }
 
 
@@ -536,6 +551,9 @@ width: 792px;
         display: flex;
         column-gap: 16px;
     }
+    .fruits img {
+        border-radius: 20px;
+    }
 .son__beef{
         display: flex;
         column-gap: 16px;
@@ -547,6 +565,9 @@ width: 792px;
 .son__shavuha{
         display: flex;
         column-gap: 16px;
+    }
+    .shavuha img {
+        border-radius: 20px;
     }
 .menu__list h5{
     font-family: 'Inter', sans-serif;
@@ -645,6 +666,15 @@ width: 792px;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+}
+.ingridients__right div {
+    cursor: pointer;
+
+}
+.ingridients__right div:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    animation: ease-in-out;
 }
 .ingridients__right h1{
 margin-bottom: 32px;
@@ -757,6 +787,4 @@ letter-spacing: -0.02em;
     line-height: 21.78px;
     letter-spacing: -0.02em;
 }
-img{
-    border-radius: 20px;
-}
+
