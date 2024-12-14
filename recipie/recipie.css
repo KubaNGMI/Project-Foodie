@@ -21,6 +21,10 @@
     font-family: "Inter", sans-serif;
     color: #000000;
 }
+.food a {
+    color: #000000;
+    text-decoration: none;
+}
 .logo{
     display: flex;
     column-gap: 40px;
@@ -574,6 +578,66 @@ width: 792px;
     background: #0000001A;
     margin: 33px 0 33px;
 }
+.ingredient-item input[type="checkbox"]:checked + span + p {
+    text-decoration: line-through;
+}
+.ingredient_checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.custom-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 2px solid #DBE2E5;
+  }
+.ingredient_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .ingridient_checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .ingredient_checkbox input:checked ~ .custom-checkbox {
+    background-color: #000000;
+  }
+  .custom-checkbox::after  {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .ingredient_checkbox input:checked ~ .custom-checkbox::after {
+    display: block;
+  }
+  .ingredient_checkbox input:checked ~ .custom-checkbox::after {
+    left: 8px;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
 .ingridient__recipe{
     display: flex;
 }
