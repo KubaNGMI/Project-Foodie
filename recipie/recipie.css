@@ -7,15 +7,17 @@
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
 }
 .food{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0 40px ;
+    margin: 40px 80px 40px ;
 }
 .food ul{
     display: flex;
+    justify-content: center;
     column-gap: 60px;
     font-weight: 500;
     font-family: "Inter", sans-serif;
@@ -25,20 +27,21 @@
     color: #000000;
     text-decoration: none;
 }
+
 .logo{
     display: flex;
     column-gap: 40px;
 }
-.header__end::before{
-    content: '';
-    width: 1920px;
-    height: 1px;
-    background: #0000001A;
-    display: block;
-    margin: 0 auto;
-}
-.header__end {
+.header_end {
     overflow: hidden;
+}
+.header_end::before {
+    content: '';
+    display: block;
+    width: 1280px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #0000001A;
 }
 .top__left h1{
     font-weight: 600;
@@ -526,6 +529,7 @@ width: 792px;
     background: #0000001A;
     display: block;
     margin-bottom: 48px;
+    display: none;
 }
 .logo1 {
     display: flex;

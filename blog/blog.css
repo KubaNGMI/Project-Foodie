@@ -39,7 +39,7 @@
 .header_end::before {
     content: '';
     display: block;
-    width: 1920px;
+    width: 1280px;
     margin: 0 auto;
     height: 1px;
     background-color: #0000001A;
