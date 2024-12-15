@@ -119,6 +119,9 @@ line-height: 29.05px;
 letter-spacing: -0.04em; 
  
 }
+.industry__left img {
+    margin-bottom: 32px;
+}
 .share p {
     font-family: 'Inter' , sans-serif;
     font-size: 14px;
