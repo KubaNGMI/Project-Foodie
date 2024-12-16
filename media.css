@@ -8,9 +8,32 @@
         margin-right: 20px;
     }
 }
-@media (max-width:1024px) {
+@media (max-width:1208px) {
+    .container {
+        max-width: 1208px;
+    }
+    .sub_box {
+        width: 1208px;
+    }
+    .recipes {
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+    .cat_bot {
+        flex-wrap: wrap;
+        column-gap: 120px;
+        justify-content: center;
+        row-gap: 60px;
+    }
+    
+}
+@media (max-width:1025px) {
+        .container {
+            max-width: 1024px;
+        }
         .sub_box {
-            max-width: 900px;
+            max-width: 1024px;
         }
         .right_kissing {
             z-index: 0;
@@ -45,5 +68,8 @@
             row-gap: 70px;
             column-gap: 50px;
             justify-content: space-around;
+        }
+        .sub_box button {
+            right: 220px;
         }
 }
