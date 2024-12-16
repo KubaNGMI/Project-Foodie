@@ -57,25 +57,69 @@
                         </form>
                     </div>
                     <div class="FormEmail">
-                        <h2>Email address</h2>
+                        <h2>Enter subject</h2>
                         <form>
                             <label>
-                                <input type="email" placeholder="Your email address...">
+                                <input type="email" placeholder="Enter subject...">
                             </label>
                         </form>
                     </div>
                     <div class="FormEmail">
-                        <h2>Email address</h2>
-                        <form>
-                            <label>
-                                <input type="email" placeholder="Your email address...">
-                            </label>
-                        </form>
-                    </div>
+                        <h2>ENquiry type</h2>
+                            <form>
+                                <label>
+                                    <div class="select">
+                                        <div
+                                          class="selected"
+                                          data-default="Advertising"
+                                          data-one="Investment"
+                                          data-two="B2B"
+                                          data-three="Jobs"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            height="1em"
+                                            viewBox="0 0 512 512"
+                                            class="arrow"
+                                          >
+                                            <path
+                                              d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                                            ></path>
+                                          </svg>
+                                        </div>
+                                        <div class="options">
+                                          <div title="all">
+                                            <input id="all" name="option" type="radio" checked="" />
+                                            <label class="option" for="all" data-txt="Advertising"></label>
+                                          </div>
+                                          <div>
+                                            <input id="option-1" name="option" type="radio" />
+                                            <label class="option" for="option-1" data-txt="Investment"></label>
+                                          </div>
+                                          <div>
+                                            <input id="option-2" name="option" type="radio"  />
+                                            <label class="option" for="option-2" data-txt="B2B" ></label>
+                                          </div>
+                                          <div>
+                                            <input id="option-3" name="option" type="radio" />
+                                            <label class="option" for="option-3" data-txt="Jobs"></label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                </label>
+                            </form>
+                        </div>
                     <div class="ContactTextArea">
                         <h2>MEssages</h2>
-                        <textarea name="text" id="Message" placeholder="Enter your messages..."></textarea>
-                        <button class="sub_button">Submit</button>
+                        <form>
+                            <label>
+                                <textarea name="text" id="Message" placeholder="Enter your messages..."></textarea>
+                                <button class="sub_button">Submit</button>
+
+                            </label>
+                        </form>
+
                     </div>
                 </div>
 
@@ -96,8 +140,8 @@
         <section class="menu"> 
             <div class="container"> 
                 <h1>You may like these recipe too</h1> 
-                <div class="menu__list"> 
-                    <div class="fruits"> 
+                <div class="menu__list" > 
+                    <div class="fruits" id="meals"> 
                     <img src="../image/fruits.png" alt="">  
                     <h5>Mixed Tropical Fruit Salad with Superfood Boosts </h5> 
                     <div class="son__fruits"> 
@@ -107,7 +151,7 @@
                     <p>Healthy</p> 
                 </div> 
                 </div> 
-                <div class="beef"> 
+                <div class="beef" id="meals"> 
                     <img src="../image/beefxpotatos.png" alt=""> 
                     <h5>Big and Juicy Wagyu Beef Cheeseburger</h5> 
                     <div class="son__beef"> 
@@ -117,7 +161,7 @@
                         <p>Western</p> 
                     </div> 
                 </div> 
-                <div class="eggs"> 
+                <div class="eggs" id="meals"> 
                     <img src="../image/eggs.png" alt=""> 
                     <h5>Healthy Japanese Fried Rice with Asparagus</h5> 
                     <div class="son__eggs"> 
@@ -127,7 +171,7 @@
                         <p>Healthy</p> 
                     </div> 
                 </div> 
-                <div class="shavuha"> 
+                <div class="shavuha" id="meals"> 
                     <img src="../image/shavuha.png" alt=""> 
                     <h5>Cauliflower Walnut Vegetarian Taco Meat</h5> 
                     <div class="son__shavuha"> 

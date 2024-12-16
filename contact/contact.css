@@ -55,6 +55,7 @@
     line-height: 77.45px;
     letter-spacing: -0.04em;
     margin-bottom: 80px;
+    margin-top: 84px;
 }
 .ContactAll {
     display: flex;
@@ -67,7 +68,7 @@
     height: 180px;
     width: 890px;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .FormName h2 {
     font-family: 'Inter';
@@ -77,7 +78,12 @@
     letter-spacing: 0.08em;
     text-align: left;
     text-transform: uppercase;
-    color: #00000060;    
+    color: #00000060;
+    margin-bottom: 12px; 
+    margin-left: 10px; 
+}
+.FormEmail h2 {
+    margin-bottom: 12px;; 
 }
 .ContactRigt input {
     width: 380px;
@@ -87,6 +93,121 @@
     padding-left: 20px;
 
 }
+#ENquiry {
+    width: 380px;
+    height: 60px;
+    border: 1px solid #00000020;
+    border-radius: 16px;
+    padding-left: 10px;
+    color: #00000080;
+    padding-right: 20px;
+    font-family: 'Inter' , sans-serif;
+
+}
+.select {
+    width: 370px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    color: black;
+    font-family: 'Inter' , sans-serif;
+    border: 1px solid #00000020;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  .selected {
+    background-color: #FFFF;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 100000;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .arrow {
+    position: relative;
+    right: 0px;
+    height: 10px;
+    transform: rotate(0deg);
+    width: 25px;
+    fill: black;
+    z-index: 100000;
+    transition: 300ms;
+  }
+  .options {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .select:hover > .options {
+    opacity: 1;
+    top: 0;
+  }
+  
+  .select:hover > .selected .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .option {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 300ms;
+    background-color: #FFFFFF;
+    width: 150px;
+    font-size: 15px;
+  }
+  .option:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .options input[type="radio"] {
+    display: none;
+  }
+  
+  .options label {
+    display: inline-block;
+  }
+  .options label::before {
+    content: attr(data-txt);
+  }
+  
+  .options input[type="radio"]:checked + label {
+    display: none;
+  }
+  
+  .options input[type="radio"]#all:checked + label {
+    display: none;
+  }
+  
+  .select:has(.options input[type="radio"]#all:checked) .selected::before {
+    content: attr(data-default);
+  }
+  .select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+    content: attr(data-one);
+  }
+  .select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+    content: attr(data-two);
+  }
+  .select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+    content: attr(data-three);
+  }
+  .selected::before {
+    color: #00000060;
+  }
+  
 .FormEmail h2{
     font-family: 'Inter';
     font-size: 12px;
@@ -121,7 +242,8 @@ textarea {
     border-radius: 16px;
     border: 1px solid #00000010;
     user-select: text;
-    resize: none    ;
+    resize:none;
+    letter-spacing: normal;
 }
 textarea::placeholder {
     font-family: 'Inter' ,sans-serif;
@@ -134,13 +256,21 @@ textarea::placeholder {
     font-family: 'Inter', sans-serif;
     border-radius: 16px;
     cursor: pointer;
+    margin-top: 48px;
 }
+.sub_button:hover {
+    transform: scale(1.1);
+    animation: ease-in-out;
+    transition: 0.3s;
+}
+
 .sub_box { 
     width: 1280px; 
     height: 442px; 
     border-radius: 60px; 
     background-color: #E7F9FD; 
     position: relative; 
+    margin-top: 160px;
 } 
 .left_kissing { 
     position: absolute; 
@@ -358,11 +488,18 @@ row-gap: 16px;
     top: 0; 
     right: 0; 
     column-gap: 40px; 
-    margin-top: 40px; 
     }
 .shavuha img {
     border-radius: 30px;
 }
 .fruits img {
     border-radius: 30px;
+}
+#meals {
+    cursor: pointer;
+}
+#meals:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    animation: ease-in-out;
 }
