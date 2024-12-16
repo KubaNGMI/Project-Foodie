@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Foodieland</title> 
     <link rel="stylesheet" href="./post.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="fancybox.css" />
 </head> 
 <body> 
     <header> 
         <div class="container"> 
             <div class="food"> 
-                <img src="../image/FoodielandFinish.svg" alt=""> 
+                <img src="../image/FoodielandFinish.svg" alt="">
             <ul> 
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../recipie/recipie.html">Recipes</a></li>
@@ -48,7 +54,15 @@
         <section> 
             <div class="container"> 
                 <div class="chef__photo"> 
-                    <img src="../image/chef.png" alt=""> 
+                    <a class="chef_one" href="../image/chef.png" data-fancybox="gallery">
+                        <img src="../image/chef.png" alt=""> 
+                      </a>
+                      <a class="chef_two" href="../image/Types-of-Chefs-1080x675.jpg" data-fancybox="gallery"></a>
+                      <a href="../image/Types-of-Chefs-1080x675.jpg"></a>
+                      <a class="chef_two" href="../image/64022f8927a2b76fd4fe84fd_Culinary Diploma (2).jpg" data-fancybox="gallery"></a>
+                      <a href="../image/64022f8927a2b76fd4fe84fd_Culinary Diploma (2).jpg"></a>
+                      <a class="chef_two" href="../image/Male-chef-with-black-bandana-cutting-ingredients-with-a-knife-in-the-kitchen-768.jpg" data-fancybox="gallery"></a>
+                      <a href="../image/Male-chef-with-black-bandana-cutting-ingredients-with-a-knife-in-the-kitchen-768.jpg"></a>
                 </div> 
             </div> 
         </section> 
@@ -61,7 +75,12 @@
                 <h2>What do you like most about your job?</h2> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut suscipit.</p> 
                 <h2>Do you cook at home on your days off?</h2> 
-                <img src="../image/womancook.png" alt=""> 
+                <a class="chef_two" href="../image/womancook.png" data-fancybox="gallery1">
+                    <img src="../image/womancook.png" alt=""> 
+                </a>
+                <a class="chef_two" href="../image/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.png" data-fancybox="gallery1"></a>
+                <a class="chef_two" href="../image/playphoto.png" data-fancybox="gallery1"></a>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut suscipit.</p> 
                 <h2>What would your advice be to young people looking to get their foot in the door?</h2> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut vehicula sed velit a faucibus. In feugiat vestibulum velit vel pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut suscipit.</p> 
@@ -175,5 +194,10 @@ id mollis ex. Praesent feugiat elementum ex ut suscipit.</p>
  
         </div> 
     </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+});
+    </script>
 </body> 
 </html>
