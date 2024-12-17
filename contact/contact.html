@@ -116,13 +116,10 @@
                             <label>
                                 <textarea name="text" id="Message" placeholder="Enter your messages..."></textarea>
                                 <button class="sub_button">Submit</button>
-
                             </label>
                         </form>
-
                     </div>
                 </div>
-
             </div>
             </div>
     </section>
@@ -133,8 +130,15 @@
                     <img class="right_kissing" src="../image/Photo.png"     alt=""> 
                     <h2>Deliciousness to your inbox</h2> 
                     <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqut enim ad minim </p> 
-                    <input type="email" placeholder="Your email address..."> <button>Subscribe</button> 
+                    <input type="email" placeholder="Your email address..."> <button onclick="togglePopup()">Subscribe</button> 
                 </div> 
+                <div class="popup">
+                    <h1>Congratulations</h1>
+                    <img src="../image/galka.svg" alt="">
+                    <p>You are subscribed now</p>
+                    <p>Thank you!</p>
+                    <h2 class="iks" onclick="togglePopup()"></h2>
+                </div>
             </div> 
         </section> 
         <section class="menu"> 
@@ -215,7 +219,8 @@ class="container">
                     <img src="../image/insta.svg" alt=""> 
                 </div> 
             </div> 
- 
         </div> 
-         
     </footer>
+    <script src="../js.js"></script>
+    </body>
+    </html>

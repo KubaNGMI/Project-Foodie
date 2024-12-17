@@ -38,7 +38,7 @@
 .header_end::before {
     content: '';
     display: block;
-    width: 1280px;
+    width: 1920px;
     margin: 0 auto;
     height: 1px;
     background-color: #0000001A;
@@ -249,62 +249,45 @@ letter-spacing: -0.04em;
     justify-content: space-between;
     padding-bottom: 24px;
 }
-.total::after{
+.psevdocal{
+    margin-bottom: 10px;
+}
+.psevdocal::after{
     content: '';
     width: 336px;
     height: 1px;
     background: #0000001A;
     display: block;
     position: absolute;
-
+    margin-bottom: 10px;
 }
+
 .total{
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
 }
-.protein::after{
-    content: '';
-    width: 336px;
-    height: 1px;
-    background: #0000001A;
-    display: block;
-    position: absolute;
-}
+
 .protein{
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
 }
-.carbo::after{
-    content: '';
-    width: 336px;
-    height: 1px;
-    background: #0000001A;
-    display: block;
-    position: absolute;
-}
+
 .carbo{
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
 }
-.cholester::before{
-    content: '';
-    width: 336px;
-    height: 1px;
-    background: #0000001A;
-    display: block;
-    position: absolute;
-}
+
 .cholester{
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
 }
 .lorem p{
-    padding-top: 167px;
-    font-family: 'Inter', sans-serif;
+padding-top: 167px;
+font-family: 'Inter', sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 28px;
@@ -381,9 +364,6 @@ width: 792px;
     margin-top : 48px;
     margin-bottom: 160px;
 }
-
-
-
 .sub_box {
     width: 1280px;
     height: 442px;
@@ -438,7 +418,6 @@ width: 792px;
     text-align: start;
     padding-left: 20px;
     border: none;
-
 }
 .sub_box button {
     width: 160px;
@@ -451,6 +430,73 @@ width: 792px;
     margin-top: 10px;
     cursor: pointer;
 }
+.popup{
+    width: 500px;
+    height: 300px;
+    background-color: #a9e5f3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    display: none;
+}
+.popup.active{
+    display: block;
+}
+.popup.active h2{
+    padding: 7px;
+    position: absolute;
+    right: 1px;
+    top: -15px;
+    font-size: 40px;
+}
+.iks::before{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(45deg);
+}
+.iks::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(-45deg);
+}
+.popup.active h2:hover{
+    cursor: pointer;
+}
+.popup h1{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 45px;
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+.popup p{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.popup img{
+  width: 50px;
+    height: 50px;
+}  
 .menu__list{
     display: flex;
     column-gap: 40px;
@@ -463,8 +509,6 @@ width: 792px;
     animation: ease-in-out;
     transition: 0.4s;
 }
-
-
 
 .manu_list a {
     text-decoration: none;
@@ -613,6 +657,11 @@ width: 792px;
     height: 0;
     width: 0;
 }
+.ingridients__bottom__right:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    animation: ease-in-out;
+}
 .custom-checkbox{
     position: absolute;
     top: 0;
@@ -708,6 +757,9 @@ color: #00000099;
     display: flex;
     margin-left: 40px;
 }
+.frikodelki img{
+    border-radius: 20px;
+}
 .friko{
     display: flex;
     flex-direction: column;
@@ -717,6 +769,9 @@ color: #00000099;
 .pasta{
     display: flex;
     margin-left: 40px;
+}
+.pasta img{
+    border-radius: 20px;
 }
 .pastas{
     display: flex;
