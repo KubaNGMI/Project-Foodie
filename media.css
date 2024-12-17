@@ -69,6 +69,154 @@
             column-gap: 50px;
             justify-content: space-around;
         }
+
+}
+@media(max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+    .logo{
+        display: none;
+    }
+    .header_top ul{
+        column-gap: 25px;
+    }
+    .mid_all{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid_textLeft h2{
+        text-align: center;
+    }
+    .mid_textLeft p{
+        text-align: center;
+    }
+    .mid_textLeft a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub_box{
+        max-width: 700px;
+        margin-left: 14px;
+    }
+    .sub_box input{
+        width: 350px;
+    }
+    .sub_box button{
+        width: 120px;
+    }
+    
+    .manu_list p{
+        text-align: center;
+    }
+    .manu_list ul{
+        column-gap: 15px;
+    }
+}
+@media(max-width:430px){
+    .container{
+        max-width: 430px;
+    }
+    .food{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_top ul{
+        display: none;
+    }
+    .top_box_right img{
+        width: 390px;
+    }
+    .badge{
+        display: none;
+    }
+    .try_header h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .author_box{
+        margin: 0;
+    }
+    .top_box_left_button{
+        width: 150px;
+        margin-left: 20px;
+    }
+    .sub_box{
+        max-width: 400px;
+        margin: 0;
+    }
+    .sub_box h2{
+        font-size: 28px;
+    }
+    .sub_box p{
+        font-size: 10px;
+    }
+    .sub_box input{
+        width: 250px;
+        height: 50px;
+    }
+    .sub_box button{
+        width: 80px;
+        height: 25px;
+        position: absolute;
+        left: 60%;
+        top: 25%;
+        font-size: 10px;
+    }
+    .mid_photoRight img{
+        width: 390px;
+    }
+    .manu_list{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .manu_list ul{
+        margin-left: 55px;
+    }
+    .logo_bot {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+    .logo_bot img{
+        width: 20px;
+        height: 20px;
+    }
+    .top_box_left h1{
+        font-size: 50px;
+    }
+    .cat_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .mid_textLeft h2{
+        font-size: 38px;
+    }
+}
+@media(max-width:390px){
+    .container{
+        max-width: 390px;
+    }
+    #ads{
+        width: 360px;
+    }
+    .mid_photoRight img{
+        width: 340px;
+    }
+    .sub_box{
+        width: 350px;
+    }
+    .sub_box p{
+        font-size: 9px;
+    }
+    .copyright p{
+        font-size: 14px;
+    }
         .sub_box button {
             right: 220px;
         }
