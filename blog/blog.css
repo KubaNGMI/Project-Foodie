@@ -39,7 +39,7 @@
 .header_end::before {
     content: '';
     display: block;
-    width: 1280px;
+    width: 1920px;
     margin: 0 auto;
     height: 1px;
     background-color: #0000001A;
@@ -64,8 +64,7 @@
     line-height: 28px;
     text-align: center;
     color: #00000060;
-    margin-bottom: 80px;
-    
+    margin-bottom: 80px;  
 }
 .blog_search_box input {
     text-align: left;
@@ -73,10 +72,13 @@
     height: 80px;
     border-radius: 20px;
     padding-left: 32px;
-    border-color: #00000010;
-  
+    border-color: #00000010; 
 }
-
+.blog_main img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    animation: ease-in-out;
+}
 .Search {
     width: 160px;
     height: 60px;
@@ -344,6 +346,73 @@ footer {
     cursor: pointer;
     border: none;
 }
+.popup{
+    width: 500px;
+    height: 300px;
+    background-color: #a9e5f3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    display: none;
+}
+.popup.active{
+    display: block;
+}
+.popup.active h2{
+    padding: 7px;
+    position: absolute;
+    right: 1px;
+    top: -15px;
+    font-size: 40px;
+}
+.iks::before{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(45deg);
+}
+.iks::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(-45deg);
+}
+.popup.active h2:hover{
+    cursor: pointer;
+}
+.popup h1{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 45px;
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+.popup p{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.popup img{
+  width: 50px;
+    height: 50px;
+}  
 .page_sel {
     display: flex;
     justify-content: center;

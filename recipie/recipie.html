@@ -82,19 +82,24 @@
                     <div class="calories">
                     <p>Calories</p> <span>219.9 kcal</span>
                 </div>
+                <div class="psevdocal"></div>
                     <div class="total">
                     <p>Total Fat</p> <span>10.7 g</span>
                 </div>
+                <div class="psevdocal"></div>
                 <div class="protein">
                     <p>Protein</p><span>7.9 g</span>
                 </div>
+                <div class="psevdocal"></div>
                 <div class="carbo">
                     <p>Carbohydrate
                     </p> <span>22.3 g</span>
                 </div>
+                <div class="psevdocal"></div>
                 <div class="cholester">
                     <p>Cholesterol</p> <span>37.4 mg</span>
                 </div>
+                <div class="psevdocal"></div>
                 <div class="lorem"><p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
                 </div>
             </div>
@@ -220,8 +225,15 @@
                 <h2>Deliciousness to your inbox</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqut enim ad minim </p>
                 <div class="email_sub">
-                <input type="email" placeholder="Your email address..."> <button>Subscribe</button>
+                <input type="email" placeholder="Your email address..."> <button onclick="togglePopup()">Subscribe</button>
                 </div>
+            </div>
+            <div class="popup">
+                <h1>Congratulations</h1>
+                <img src="../image/galka.svg" alt="">
+                <p>You are subscribed now</p>
+                <p>Thank you!</p>
+                <h2 class="iks" onclick="togglePopup()"></h2>
             </div>
         </div>
     </section>
@@ -302,9 +314,8 @@
                     <img src="../image/insta.svg" alt="">
                 </div>
             </div>
-
         </div>
-        
     </footer>
+    <script src="../js.js"></script>
 </body>
 </html>
