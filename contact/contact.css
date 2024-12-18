@@ -27,7 +27,6 @@
     color: #000000;
     text-decoration: none;
 }
-
 .logo{
     display: flex;
     column-gap: 40px;
@@ -38,7 +37,7 @@
 .header_end::before {
     content: '';
     display: block;
-    width: 1280px;
+    width: 1920px;
     margin: 0 auto;
     height: 1px;
     background-color: #0000001A;
@@ -91,7 +90,6 @@
     border-radius: 20px;
     border: 1px solid #00000020;
     padding-left: 20px;
-
 }
 #ENquiry {
     width: 380px;
@@ -102,7 +100,6 @@
     color: #00000080;
     padding-right: 20px;
     font-family: 'Inter' , sans-serif;
-
 }
 .select {
     width: 370px;
@@ -118,7 +115,6 @@
     padding-right: 10px;
     padding-top: 10px;
   }
-  
   .selected {
     background-color: #FFFF;
     padding: 5px;
@@ -131,7 +127,6 @@
     align-items: center;
     justify-content: space-between;
   }
-  
   .arrow {
     position: relative;
     right: 0px;
@@ -149,16 +144,13 @@
     opacity: 0;
     transition: 300ms;
   }
-  
   .select:hover > .options {
     opacity: 1;
     top: 0;
   }
-  
   .select:hover > .selected .arrow {
     transform: rotate(180deg);
   }
-  
   .option {
     border-radius: 5px;
     padding: 5px;
@@ -172,26 +164,21 @@
     color: #FFFFFF;
     cursor: pointer;
   }
-  
   .options input[type="radio"] {
     display: none;
   }
-  
   .options label {
     display: inline-block;
   }
   .options label::before {
     content: attr(data-txt);
   }
-  
   .options input[type="radio"]:checked + label {
     display: none;
   }
-  
   .options input[type="radio"]#all:checked + label {
     display: none;
   }
-  
   .select:has(.options input[type="radio"]#all:checked) .selected::before {
     content: attr(data-default);
   }
@@ -207,7 +194,6 @@
   .selected::before {
     color: #00000060;
   }
-  
 .FormEmail h2{
     font-family: 'Inter';
     font-size: 12px;
@@ -332,8 +318,73 @@ textarea::placeholder {
     cursor: pointer; 
     margin-top: 126px; 
 } 
- 
- 
+.popup{
+    width: 500px;
+    height: 300px;
+    background-color: #a9e5f3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    display: none;
+}
+.popup.active{
+    display: block;
+}
+.popup.active h2{
+    padding: 7px;
+    position: absolute;
+    right: 1px;
+    top: -15px;
+    font-size: 40px;
+}
+.iks::before{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(45deg);
+}
+.iks::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    z-index: 112;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(-45deg);
+}
+.popup.active h2:hover{
+    cursor: pointer;
+}
+.popup h1{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 45px;
+    font-size: 35px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+.popup p{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.popup img{
+  width: 50px;
+    height: 50px;
+}  
 .menu{ 
     margin-bottom: 160px; 
 } 
@@ -382,8 +433,6 @@ line-height: 16.94px;
 letter-spacing: -0.02em; 
 color: #00000099;  
 } 
- 
- 
 .frikodelki{ 
 display: flex; 
 margin-left: 40px; 
@@ -414,8 +463,6 @@ flex-direction: column;
 padding-left: 24px; 
 row-gap: 16px; 
 } 
- 
- 
 .manu_list a { 
     text-decoration: none; 
     color: #000000; 
