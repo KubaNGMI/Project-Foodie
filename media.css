@@ -7,6 +7,24 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    .sub_box {
+        max-width: 1100px;
+        margin-left: 50px;
+    }
+    .recipes {
+        display: flex;
+        justify-content: center;
+        column-gap: 70px;
+    }
+    .left_kissing {
+        z-index: 0;
+    }
+    .right_kissing {
+        z-index: 0;
+    }
+    .sub_box button {
+        right: 29%;
+    }
 }
 @media (max-width:1208px) {
     .container {
