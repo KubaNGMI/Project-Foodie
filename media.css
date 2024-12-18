@@ -25,8 +25,7 @@
         column-gap: 120px;
         justify-content: center;
         row-gap: 60px;
-    }
-    
+    }   
 }
 @media (max-width:1025px) {
         .container {
@@ -69,7 +68,6 @@
             column-gap: 50px;
             justify-content: space-around;
         }
-
 }
 @media(max-width:768px){
     .container{
@@ -106,7 +104,6 @@
     .sub_box button{
         width: 120px;
     }
-    
     .manu_list p{
         text-align: center;
     }
