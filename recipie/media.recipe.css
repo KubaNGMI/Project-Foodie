@@ -1,4 +1,5 @@
 @media  (max-width:1280px) {
+    
     .mid_all {
         margin-left: 20px;
         margin-right: 20px;
@@ -6,6 +7,218 @@
     .container {
         margin-left: 20px;
         margin-right: 20px;
+        max-width: 1280px;
+    }
+}
+@media(max-width:1208px){
+    .container{
+        max-width: 1208px;
+    }
+    .psevdocal::after{
+        display: none;
+    }
+    .lorem p{
+        padding-top: 40px;
+    }
+    .ingridient__recipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ingridients{
+        margin-left: 150px;
+    }
+    .ingridients__bottom__right img{
+        display: flex;
+        width: 400px;
+    }
+    .bottom__parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub_box{
+        max-width: 1150px;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+}
+@media (max-width:1150px){
+    .container{
+        max-width: 1150px;
+    }
+    .sub_box{
+        width: 999px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .name__left{
+        display: flex;
+        justify-content: center;
+    }
+    .top__right{
+        display: flex;
+        justify-content: center;
+    }
+    .top__left h1{
+        text-align: center;
+    }
+    .photo__center{
+        display: flex;
+        flex-direction: column;
+    }
+    .psevdocal::after{
+        display: block;
+    }
+}
+@media(max-width:1025px){
+    .container{
+        max-width: 1025px;
+    }
+}   
+@media(max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+    .logo{
+        display: none;
+    }
+    .food ul{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .mid__left img{
+        width: 730px;
+    }
+    .sub_box{
+        width: 700px;
+    }
+    .right_kissing{
+       display: none;
+    }
+    .left_kissing{
+        display: none;
+    }
+    .sub_box button{
+        margin-left:220px;
+    }
+    .directions p{
+        width: 700px;
+    }
+    .directions img{
+        width: 700px;
+    } 
+    .directions span p::after{
+        width: 700px;
+    }
+    .lorem2 p::after{
+        width: 700px;
+    }
+    .lorem3 p::after{
+        width: 700px;
+    }
+    .mid__right{
+        margin-left: 150px;
+    }
+    .ingridients{
+        margin: 0;
+    }
+    .ingridients__left p::after{
+        width: 700px;
+    }
+}
+@media(max-width:430px){
+    .container{
+        max-width: 430px;
+    }
+    .food ul{
+        display: none;
+    }
+    .forknife{
+        display: none;
+    }
+    .chicken{
+        display: none;
+    }
+    .third::after{
+        display: none;
+    }
+    .mid__left img{
+        width: 390px;
+    }
+    .mid__right{
+        margin: 0;
+    }
+    .ingridients__bottom__right img{
+        width: 365px;
+    }
+    .directions p{
+        width: 380px;
+    }
+    .directions img{
+        width: 380px;
+    }
+    .sub_box{
+        width: 380px;
+    }
+    .sub_box h2{
+        font-size: 25px;
+    }
+    .sub_box p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .sub_box input{
+        width: 350px;
+        height: 60px;
+        margin-top: 50px;
+    }
+    .sub_box button{
+        width: 100px;
+        height: 45px;
+        margin-top: 57px;
+        position: absolute;
+        left: 1px;
+    }
+    .popup{
+        width: 300px;
+        height: 270px;
+    }
+    .directions span p::after{
+        width: 380px;
+    }
+    .lorem2 p::after{
+        width: 380px;
+    }
+    .lorem3 p::after{
+        width: 380px;
+    }
+    .ingridients__left p::after{
+        width: 370px;
+}
+.ingridients__bottom__left p::after {
+    width: 370px;
+}
+.manu_list ul{
+    display: none;
+}
+.logo1{
+margin-right: 130px;
+}
+}
+@media(max-width:390px){
+    .container{
+        max-width: 390px;
+    }
+    .top__left h1{
+        font-size: 45px;
+    }
+    .name{
+        margin-left: 30px;
     }
     
 }
