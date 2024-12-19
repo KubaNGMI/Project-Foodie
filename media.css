@@ -175,9 +175,9 @@
         position: fixed;
         z-index: 1000;
         background-color: #00000080;
-        width: 100vw;
+        width: 100%;
         top: 0;
-        height: 100vh;
+        height: 100%;
         left: 0;
         display: flex;
         justify-content: center;
@@ -200,6 +200,9 @@
     }
     .food ul {
         display: none;
+    }
+    .burger_x {
+        display: inherit;
     }
     .burger_menu {
         width: 34px;
