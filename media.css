@@ -374,6 +374,7 @@
         padding: 40px 90px 20px 40px;
         z-index: 10000;
         border: 1px solid #00000080;
+        left: 0;
     }
 
 }
@@ -387,6 +388,7 @@
         padding: 40px 90px 20px 40px;
         z-index: 10000;
         border: 1px solid #00000080;
+        left: 0;
     }
     .container{
         max-width: 390px;
