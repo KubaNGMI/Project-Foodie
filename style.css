@@ -113,6 +113,9 @@ margin-left: 16px;
     vertical-align: middle;
     margin-right: 10pxx;
 }
+.burger_x {
+    display: none;
+}
 .Hot_recipes {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
