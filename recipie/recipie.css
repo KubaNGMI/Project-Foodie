@@ -52,6 +52,9 @@
 .name__left{
     display: flex;
 }
+.name__left img {
+    object-fit: cover;
+}
 .name{
     display: flex;
     flex-direction: column;
@@ -758,6 +761,7 @@ color: #00000099;
 }
 .frikodelki img{
     border-radius: 20px;
+    object-fit: cover;
 }
 .friko{
     display: flex;
@@ -771,6 +775,7 @@ color: #00000099;
 }
 .pasta img{
     border-radius: 20px;
+    object-fit: cover;
 }
 .pastas{
     display: flex;
@@ -781,6 +786,9 @@ color: #00000099;
 .cucumber{
     display: flex;
     margin-left: 40px;
+}
+.cucumber img {
+    object-fit: cover;
 }
 .cucum{
     display: flex;

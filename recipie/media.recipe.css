@@ -178,6 +178,9 @@
     .directions img{
         width: 380px;
     }
+    .name__left img {
+        display: none;
+    }
     .sub_box{
         width: 380px;
     }
